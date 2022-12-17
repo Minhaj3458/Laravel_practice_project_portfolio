@@ -25,6 +25,10 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     use RegistersUsers;
 
@@ -40,10 +44,10 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('guest');
+    // }
 
     /**
      * Get a validator for an incoming registration request.

@@ -15,6 +15,6 @@
       @endif
     
       <div class="text-center text-muted">
-        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+        <p> <br> <a class="credit" href="" target="_blank"></a></p>
       </div>
     </footer>

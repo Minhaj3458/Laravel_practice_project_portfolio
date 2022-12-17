@@ -29,13 +29,14 @@ Auth::routes();
 
 //auth router
 Route::group(['prefix' => 'auth'], function () {
+
 //Auth Management
 Route::get('manage_auth', [App\Http\Controllers\Auth\RegisterController::class,'index'])->name('manage_auth');
 Route::get('edit_auth/{id}', [App\Http\Controllers\Auth\RegisterController::class,'edit'])->name('edit_auth');
 Route::put('update_auth/{id}', [App\Http\Controllers\Auth\RegisterController::class,'update'])->name('update_auth');
 Route::get('destroy_auth/{id}', [App\Http\Controllers\Auth\RegisterController::class,'destroy'])->name('destroy_auth');
 
-
+//home
 Route::get('home', [App\Http\Controllers\Auth\Dashboard\HomeController::class, 'index'])->name('home');
 
 

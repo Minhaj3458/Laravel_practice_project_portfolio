@@ -1,13 +1,15 @@
 <?php
-
 namespace App\Http\Controllers\Auth\Dashboard;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Auth\Contact;
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -28,7 +30,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+  
     }
 
     /**
